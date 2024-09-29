@@ -1,3 +1,11 @@
+/*
+  File name: Projects.js
+  Student's Name: Alfonso Raziel Mendoza Avila
+  Student ID: 301336913
+  Date: 9-28-2024
+*/
+
+
 import React from 'react';
 import first from '../img/WeatherBotApiTeleGRam.png';
 import second from '../img/TinyApiSQL.png';

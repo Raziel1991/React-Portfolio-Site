@@ -1,3 +1,10 @@
+/*
+  File name: About.js
+  Student's Name: Alfonso Raziel Mendoza Avila
+  Student ID: 301336913
+  Date: 9-28-2024
+*/
+
 import React from 'react';
 import Mine from '../img/mine.jpg';
 import '../index.css'; 
