@@ -1,12 +1,14 @@
 import React from 'react';
+//import DesignerPng from '../img/Designer.png';
 import { Link } from 'react-router-dom';
 import 'animate.css';
-import './Navbar.css'; // Assuming you create a CSS file for styling.
+import './Navbar.css'; 
 
 const Navbar = () => {
   return (
     <nav className="navbar animate__animated animate__fadeInDown">
       <ul className="navbar-links">
+
         <li className="navbar-item animate__animated animate__fadeInLeft">
           <Link to="/" className="navbar-link">Home</Link>
         </li>

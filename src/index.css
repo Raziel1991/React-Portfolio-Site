@@ -23,7 +23,6 @@ nav ul li a {
 
 footer {
   text-align: center;
-  padding: 10px;
   background-color: #333;
   color: white;
   position: fixed;
@@ -34,4 +33,92 @@ footer {
 h1, p {
   text-align: center;
   margin: 20px;
+}
+
+/* Updated content-container using CSS Grid */
+.content-container {
+  display: grid;
+  grid-template-columns: auto 1fr; /* Image on the left, text on the right */
+  grid-template-rows: repeat(3, auto); /* Create rows for text */
+  column-gap: 20px; /* Space between the image and text */
+  align-items: start; /* Align items to the top */
+  margin-top: 20px;
+}
+
+.about-me a {
+  color: #007BFF; /* Example color */
+  text-decoration: none;
+}
+
+.about-me a:hover {
+  text-decoration: underline;
+}
+
+.about-me{
+  margin-top: 5vw;
+  margin-left: 5vw;
+}
+
+.about-me p{
+  text-align: left;
+  margin-right: 10vw;
+}
+
+.about-me h3 {
+  text-align: left;
+  margin: 20px;
+}
+
+/* Styling for the image */
+.about-me img {
+  border-radius: 50%;
+  max-width: 25vw;
+  justify-self: center;
+  float: right;
+  margin-right: 5vw;
+  margin-left: 5vw;
+}
+
+/* Styling for the image */
+.logo img {
+  margin-left: 5vw;
+  grid-row: 1 / span 3; /* Image spans across 3 rows */
+  max-width: 300px;
+  border-radius: 8%;
+  height: auto;
+  justify-self: center; /* Centers the image vertically */
+  position: sticky;
+  z-index: 50;
+  top: 0;
+}
+
+/* Text styling */
+.myText {
+  display: grid;
+  grid-template-rows: auto auto auto; /* Each paragraph in its own row */
+  margin-bottom: 100px;
+}
+
+.myText p {
+  text-align: left; /* Align text to the left */
+  font-size: 18px;
+  line-height: 1.6;
+  margin: 10px 10px;
+}
+
+/* Responsive styling for mobile */
+@media (max-width: 768px) {
+  .content-container {
+    grid-template-columns: 1fr; /* Stack image and text vertically */
+    grid-template-rows: auto auto; /* Stack elements vertically */
+  }
+
+  .logo img {
+    grid-row: auto;
+    margin-bottom: 20px; /* Adds spacing below the image */
+  }
+
+  .myText p {
+    text-align: center; /* Center text on mobile screens */
+  }
 }

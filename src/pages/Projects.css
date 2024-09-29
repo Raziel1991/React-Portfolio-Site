@@ -1,0 +1,36 @@
+.project-container {
+    display: flex;
+    align-items: center;
+    margin: 20px 0; /* Add margin for spacing */
+}
+
+.project-container.reverse {
+    flex-direction: row-reverse; /* Reverse the order for alternating layout */
+}
+
+.text-container {
+    flex: 1; /* Take up available space */
+    padding: 10px; /* Add some padding */
+}
+
+.main-image {
+    flex: 1; /* Take up available space */
+    max-width: 50vw;
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 5px;
+    margin-right: 5vw;
+    margin-left: 5vw;
+}
+
+/* Additional styling */
+h1 {
+    text-align: center; /* Center the heading */
+}
+
+p {
+    text-align: justify; /* Justify paragraph text for better readability */
+}
+
+.Margin-bottom {
+    margin-bottom: 10vw;
+}
